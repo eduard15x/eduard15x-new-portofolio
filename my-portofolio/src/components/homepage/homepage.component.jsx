@@ -1,9 +1,16 @@
 import React from "react";
 import './homepage.style.scss'
+import Navigation from "../navigation/navigation.component";
+import Footer from "../footer/footer.component";
+import About from "../about/about.component";
+import Projects from "../projects/projects.component";
+import Skills from "../skills/skills.component";
+import Contact from "../contact/contact.component";
 
 const Homepage = () => {
     return (
         <div className="homepage-container">
+            <Navigation />
             <div className="intro-text">
                 <h1>Hi there, I am Eduard Precup</h1>
                 <p>Front-End Developer</p>
@@ -14,6 +21,11 @@ const Homepage = () => {
                 alt="Eduard Precup" 
                 title="Eduard Precup" 
             />
+            <About />
+            <Projects />
+            <Skills />
+            <Contact />
+            <Footer />
         </div>
     );
 };
